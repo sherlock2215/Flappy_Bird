@@ -1,0 +1,2 @@
+# Core dependencies
+pygame>=2.5.0
