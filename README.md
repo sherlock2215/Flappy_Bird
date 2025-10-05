@@ -44,7 +44,7 @@ python main.py
 
 | Gameplay | Game Over |
 |-----------|------------|
-| ![Gameplay Screenshot](Screenshot_flappy.png) | ![Game Over Screenshot](game-over.png) |
+| ![Gameplay Screenshot](assets/Screenshot_flappy.png) | ![Game Over Screenshot](assets/game-over.png) |
 
 
 ---
