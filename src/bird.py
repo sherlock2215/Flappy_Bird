@@ -9,9 +9,9 @@ class Bird:
         self.screen = screen
         # Use YOUR actual bird images
         self.frames = [
-            pygame.image.load("assets/images/bird1.png").convert_alpha(),
-            pygame.image.load("assets/images/bird2.png").convert_alpha(),
-            pygame.image.load("assets/images/bird3.png").convert_alpha()
+            pygame.image.load("../assets/images/bird1.png").convert_alpha(),
+            pygame.image.load("../assets/images/bird2.png").convert_alpha(),
+            pygame.image.load("../assets/images/bird3.png").convert_alpha()
         ]
         self.frame_index = 0
         self.image = self.frames[self.frame_index]
