@@ -51,7 +51,7 @@ class Bird:
 
         # Check pipe collisions
         for pipe in pipes:
-            if self.rect.colliderect(pipe.rect):
+            if pipe.check_collision(self.rect):
                 self.alive = False
                 return True
 
