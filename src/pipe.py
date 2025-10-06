@@ -6,7 +6,7 @@ from config import SCREEN_WIDTH, SCREEN_HEIGHT, PIPE_GAP, PIPE_SPEED
 class Pipe:
     """Represents a pair of pipes (top and bottom) that the bird must navigate through."""
 
-    def __init__(self, image_path="assets/images/pipe.png"):
+    def __init__(self, image_path="../assets/images/pipe.png"):
         self.image = pygame.image.load(image_path).convert_alpha()
 
         # Create top pipe (flipped)
