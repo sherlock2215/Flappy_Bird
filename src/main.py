@@ -6,6 +6,7 @@ A Python implementation of the classic Flappy Bird game using Pygame.
 
 from game import FlappyBirdGame
 
+
 def main():
     """Initialize and run the Flappy Bird game."""
     try:
@@ -14,6 +15,7 @@ def main():
     except Exception as e:
         print(f"Error starting the game: {e}")
         print("Please make sure all asset files are in the correct location.")
+
 
 if __name__ == "__main__":
     main()
