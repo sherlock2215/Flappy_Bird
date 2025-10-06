@@ -28,8 +28,8 @@ class FlappyBirdGame:
         self.clock = pygame.time.Clock()
 
         # Load assets
-        self.background = pygame.image.load("assets/images/background.png").convert()
-        self.ground = pygame.image.load("assets/images/ground.png").convert()
+        self.background = pygame.image.load("../assets/images/background.png").convert()
+        self.ground = pygame.image.load("../assets/images/ground.png").convert()
         self.ground_rect = self.ground.get_rect(topleft=(0, SCREEN_HEIGHT - 100))
 
         # Game objects
