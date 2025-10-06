@@ -37,6 +37,10 @@ class Bird:
     def draw(self):
         """Draw the bird on the screen."""
         self.screen.blit(self.image, self.rect)
+    def animate(self):
+        """Cycle through bird frames for flapping animation."""
+        self.frame_index = (self.frame_index + 0.1) % len(self.frames)
+        self.image = self.frames[int(self.frame_index)]
 
     def check_collision(self, pipes, ground_height):
         """Check for collisions with pipes or ground."""
