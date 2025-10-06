@@ -5,9 +5,16 @@ from config import GRAVITY, FLAP_STRENGTH, BIRD_START_X, BIRD_START_Y
 class Bird:
     """Represents the player-controlled bird in the game."""
 
-    def __init__(self, screen, image_path="assets/images/bird.png"):
+    def __init__(self, screen):
         self.screen = screen
-        self.image = pygame.image.load(image_path).convert_alpha()
+        # Use YOUR actual bird images
+        self.frames = [
+            pygame.image.load("assets/images/bird1.png").convert_alpha(),
+            pygame.image.load("assets/images/bird2.png").convert_alpha(),
+            pygame.image.load("assets/images/bird3.png").convert_alpha()
+        ]
+        self.frame_index = 0
+        self.image = self.frames[self.frame_index]
         self.rect = self.image.get_rect(center=(BIRD_START_X, BIRD_START_Y))
         self.movement = 0
         self.alive = True
