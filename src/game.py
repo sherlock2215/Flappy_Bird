@@ -122,6 +122,7 @@ class FlappyBirdGame:
         if self.game_state == PLAYING:
             # Update bird
             self.bird.update()
+            self.bird.animate()
 
             # Handle pipes
             self.spawn_pipes()
